@@ -16,16 +16,16 @@
 			id="widget__verification-checkbox"
 			class="widget__verification-checkbox"
 		type="checkbox" />
-		<span id="widget__verification-text--before">I'm not a robot</span>
-		<span id="widget__verification-text--during">Processing...</span>
-		<span id="widget__verification-text--after">Verified!</span>
-		<span id="widget__verification-text--error">Something went wrong</span>
+		<span id="widget__verification-text--before">Ich bin kein Roboter</span>
+		<span id="widget__verification-text--during">Berechne...</span>
+		<span id="widget__verification-text--after">Verifiziert!</span>
+		<span id="widget__verification-text--error">Es ist ein Fehler aufgetreten</span>
       </label>
-      <div class="widget__mcaptcha-details">
+      <div class="widget__mcaptcha-details ">
         <a href="<.= crate::PKG_HOMEPAGE .>" 
 			class="widget__mcaptcha-logo-container"
 			target="_blank"
-		 >
+		 > 
           <img
             class="widget__mcaptcha-logo"
 			src="<.= crate::FILES.get("./static/cache/img/icon-trans.png").unwrap().>"
@@ -33,18 +33,7 @@
           />
           <p class="widget__mcaptcha-brand-name">mCaptcha</p>
         </a>
-        <div class="widget__mcaptcha-info-container">
-		  <a class="widget__mcaptcha-info-link"
-			target="_blank"
-			href="<.= crate::PKG_HOMEPAGE .><.= crate::PAGES.privacy .>">
-            Privacy
-          </a>
-		  <a class="widget__mcaptcha-info-link"
-		  	target="_blank"
-			href="<.= crate::PKG_HOMEPAGE .><.= crate::PAGES.security .>">
-            Terms
-          </a>
-        </div>
+       
       </div>
     </form>
 <.include!("./footer.html"); .>
